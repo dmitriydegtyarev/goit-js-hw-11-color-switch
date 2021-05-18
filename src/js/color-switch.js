@@ -25,7 +25,7 @@ function startChangeBackgroundColor() {
     initRandomColor();
     startBtn.classList.add('visually-hidden');
     changeColor = true;
-    console.log(initRandomColor(), changeColor);
+    console.log(`Change backround color: ${changeColor},`, `Color: ${initRandomColor()}`);
   }, 1000);  
 };
 
@@ -34,7 +34,7 @@ function stopChangeBackgroundColor() {
   body.style.backgroundColor = '';
   startBtn.classList.remove('visually-hidden');
   changeColor = false;
-  console.log(changeColor);
+  console.log(`Change backround color: ${changeColor}`);
 };
 
 startBtn.addEventListener('click', startChangeBackgroundColor);
