@@ -5,8 +5,8 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"VyiV":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.refs=void 0;var e={body:document.querySelector("body"),startBtn:document.querySelector("[data-action='start'"),stopBtn:document.querySelector("[data-action='stop'")};exports.refs=e;
 },{}],"SbnA":[function(require,module,exports) {
-"use strict";var e=n(require("./colors")),t=require("./refs");function n(e){return e&&e.__esModule?e:{default:e}}var r=t.refs.body,l=t.refs.startBtn,o=t.refs.stopBtn,s=e.default.length-1,a=null,u=!1,c=function(e,t){return Math.floor(Math.random()*(t-e+1)+e)};function i(){return r.style.backgroundColor=e.default[c(0,s)]}function d(){u||(a=setInterval(function(){i(),l.classList.add("visually-hidden"),u=!0,console.log(i(),u)},1e3))}function f(){clearInterval(a),r.style.backgroundColor="",l.classList.remove("visually-hidden"),u=!1,console.log(u)}l.addEventListener("click",d),o.addEventListener("click",f);
+"use strict";var e=o(require("./colors")),n=require("./refs");function o(e){return e&&e.__esModule?e:{default:e}}var r=n.refs.body,t=n.refs.startBtn,l=n.refs.stopBtn,c=e.default.length-1,a=null,s=!1,u=function(e,n){return Math.floor(Math.random()*(n-e+1)+e)};function d(){return r.style.backgroundColor=e.default[u(0,c)]}function i(){s||(a=setInterval(function(){d(),t.classList.add("visually-hidden"),s=!0,console.log("Change backround color: ".concat(s,","),"Color: ".concat(d()))},1e3))}function f(){clearInterval(a),r.style.backgroundColor="",t.classList.remove("visually-hidden"),s=!1,console.log("Change backround color: ".concat(s))}t.addEventListener("click",i),l.addEventListener("click",f);
 },{"./colors":"oLA8","./refs":"VyiV"}],"Focm":[function(require,module,exports) {
 "use strict";require("./css/styles.css"),require("./js/color-switch");
 },{"./css/styles.css":"krre","./js/color-switch":"SbnA"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-color-switch/src.3a3ecb20.js.map
+//# sourceMappingURL=/goit-js-hw-11-color-switch/src.de14e116.js.map
